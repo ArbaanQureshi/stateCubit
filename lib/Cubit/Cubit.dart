@@ -9,6 +9,7 @@ class PostCubit extends Cubit<CubitState>{
 
   void get poss async{
     var data = await _dataServices.getPost();
-    emit(RespondState( posts: data));
+    emit(RespondState(posts: data));
+
   }
 }
